@@ -1,6 +1,7 @@
 package com.example.lecture6_aop.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,8 +13,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Product {
     @Id
+    @GeneratedValue
     Integer id;
     String name;
     String category;
-    
 }
